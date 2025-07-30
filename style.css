@@ -1,0 +1,139 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+/* Main container */
+.wrapper {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Heading */
+.wrapper h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Captcha section */
+.captcha-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+#captchaCanvas {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Button group for reload + speak */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.reload-btn,
+.speak-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.6rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.speak-btn {
+  background-color: #17a2b8;
+}
+
+.reload-btn:hover {
+  background-color: #0056b3;
+}
+
+.speak-btn:hover {
+  background-color: #117a8b;
+}
+
+/* Input field and check button */
+.input-area {
+  position: relative;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.check-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.check-btn:hover {
+  background-color: #218838;
+}
+
+.check-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Status text feedback */
+.status-text {
+  font-size: 1rem;
+  height: 1.2rem;
+  color: #333;
+  margin-top: 0.5rem;
+  transition: opacity 0.3s;
+}
+
+/* Responsive design */
+@media screen and (max-width: 500px) {
+  .captcha-area {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .button-group {
+    flex-direction: row;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Captcha Verification</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Advanced Captcha Verification</h1>
+
+    <div class="captcha-area">
+      <canvas id="captchaCanvas" width="200" height="60" aria-label="Captcha image"></canvas>
+      <div class="button-group">
+        <button class="reload-btn" id="reloadBtn" title="Reload Captcha">&#x21bb;</button>
+        <button class="speak-btn" onclick="speakCaptcha()" title="Speak Captcha">🔊</button>
+      </div>
+    </div>
+
+    <form class="input-area">
+      <input type="text" id="captchaInput" placeholder="Enter Captcha" required aria-label="Captcha input" />
+      <button class="check-btn" id="checkBtn">Check</button>
+    </form>
+
+    <div class="status-text" id="statusText"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

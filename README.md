@@ -1,6 +1,6 @@
-readme_content = """# captcha_project_version1
+ captcha_project_version1
 
-🚀 **Project Summary: CAPTCHA Verification System**
+
 
 ## 🔐 Goal
 To build a **user-friendly, secure, and visually appealing CAPTCHA verification system** using **HTML, CSS, and JavaScript**, with **canvas-based rendering** and **anti-bot distortion**.
